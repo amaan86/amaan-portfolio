@@ -8,9 +8,6 @@ hamburger.addEventListener('click', () => {
     all.forEach(link => {
         link.classList.add('fade');
     });
-    document.getElementById('1').classList.toggle('show1');
-    document.getElementById('2').classList.toggle('show2');
-    document.getElementById('3').classList.toggle('show3');
 });
 all.forEach(link => {
     link.addEventListener('click', () => {
