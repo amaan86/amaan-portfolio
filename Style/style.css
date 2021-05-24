@@ -639,21 +639,6 @@ video {
         font-size: 15px;
     }
 
-    .hamburger div.show1 {
-        transform: rotate(45deg);
-        margin-top: 17px;
-    }
-
-    .hamburger div.show2 {
-        margin: -10px 0;
-        display: none;
-    }
-
-    .hamburger div.show3 {
-        transform: rotate(135deg);
-        margin: -8px 5px;
-    }
-
     .video {
         padding: 0 3.5%;
     }
