@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+header {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 135px;
+    padding: 0 50px;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.5s;
+}
+
+header.black {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 90px;
+    padding: 0;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-links span {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-links span:hover {
+    color: #1f53ff;
+}
+
+.nav-links {
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 0 40px;
+}
+
+header img {
+    height: 90px;
+    width: 90px;
+    margin: 20px 40px;
+    transition: all 0.5s;
+}
+
+header.black img {
+    height: 46px;
+    width: 46px;
+}
+
+.wall {
+    background-image: url("../images/wallpaper.jpg");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    backdrop-filter: blur(1rem);
+}
+
+.home h1 {
+    color: white;
+}
+
+.home p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.readmore {
+    background: linear-gradient(200deg, #2f65fc 0%, #9305f8 100%);
+    padding: 15px;
+    margin: 22px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.readmore:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.heading {
+    background-color: rgb(0, 82, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 17vh;
+}
+
+.line1 {
+    margin: 12px;
+    width: 55px;
+    padding: 2px;
+    color: #dedede;
+}
+
+h2 {
+    margin-top: -98px;
+    font-size: 40px;
+    color: white;
+    padding-top: 105px;
+}
+
+.about {
+    margin: 30px 0 30px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 14px 1px #5c5c5c;
+    padding-right: 0;
+}
+
+.about img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.myimage {
+    padding: 0;
+}
+
+.about p {
+    color: black;
+    padding: 40px;
+}
+
+.cards {
+    padding: 0;
+    margin: 30px 0 30px 0;
+    border-radius: 5px;
+    box-shadow: 2px 1px 14px 1px #5c5c5c;
+    display: flex;
+}
+
+.card {
+    border: none;
+    box-shadow: none;
+    padding: 40px;
+}
+
+.pro-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.pro-image {
+    padding: 0;
+}
+
+.github-repo1,
+.github-repo2 {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.github-repo1::before {
+    content: "";
+    position: absolute;
+    left: 41px;
+    bottom: 44px;
+    width: 0;
+    height: 1.5px;
+    background-color: black;
+    visibility: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.github-repo2::before {
+    content: "";
+    position: absolute;
+    left: 41px;
+    bottom: 44px;
+    width: 0;
+    height: 1.5px;
+    background-color: black;
+    visibility: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.github-repo1:hover::before,
+.github-repo2:hover::before {
+    width: 235px;
+    visibility: visible;
+}
+
+.github-repo1:hover,
+.github-repo2:hover {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 31px 0;
+    padding: 0;
+}
+
+.imp-link {
+    list-style: none;
+    margin: 16px 0;
+    text-decoration: underline white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imp-link a {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.imp-link:hover,
+.imp-link a:hover {
+    color: #1f53ff;
+    text-decoration: underline #1f53ff;
+}
+
+.icons {
+    display: inline-block;
+    margin: 250px 10px 28px;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+.icons i {
+    font-size: 30px;
+    color: white;
+    padding: 4px 11px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fb {
+    background: rgb(0, 106, 192);
+}
+
+.twit {
+    background: rgb(0, 110, 255);
+}
+
+.linked {
+    background: rgb(0, 110, 255);
+}
+
+.git {
+    background: rgb(0, 92, 77);
+}
+
+.copyright {
+    display: flex;
+    background: rgb(29, 29, 29);
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+.footer p {
+    margin: -15px 0 15px;
+}
+
+.footer-line {
+    width: 0;
+    height: 0;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    outline: 0px;
+    background: #0a58ca;
+    border: none;
+    padding: 5px 17px 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    display: none;
+}
+
+.scroll-top:hover {
+    background: rgb(25, 52, 209);
+}
+
+.scroll-top i {
+    color: #ffffffcf;
+    font-size: 20px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    cursor: pointer;
+}
+
+.video {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 0 17%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: 0.5s;
+    display: none;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    animation: zoom 0.5s linear;
+}
+
+.cross {
+    font-size: 40px;
+    position: fixed;
+    margin: 20px;
+    top: 65px;
+    right: 0;
+    cursor: pointer;
+    z-index: 20;
+    color: white;
+    transition: 0.5s;
+    display: none;
+}
+
+.cube {
+    margin: auto;
+    font-size: 60px;
+    height: 1em;
+    width: 1em;
+    position: relative;
+    transform: rotatex(30deg) rotatey(45deg);
+    transform-style: preserve-3d;
+    animation: cube-spin 1.5s infinite ease-in-out alternate;
+}
+.loader-wrapper{
+    z-index: 99999999;
+    background-color: #181818;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-style: preserve-3d;
+}
+
+.side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 82, 189);
+    transform: translatez(0.3em);
+    animation: cube-explode 1.5s infinite ease-in-out;
+    opacity: 0.5;
+}
+
+.side:nth-child(1) {
+    transform: rotatey(90deg);
+}
+
+.side:nth-child(2) {
+    transform: rotatey(180deg);
+}
+
+.side:nth-child(3) {
+    transform: rotatey(270deg);
+}
+
+.side:nth-child(4) {
+    transform: rotatey(360deg);
+}
+
+.side:nth-child(5) {
+    transform: rotatex(90deg);
+}
+
+.side:nth-child(6) {
+    transform: rotatex(270deg);
+}
+
+@keyframes cube-spin {
+    0% {
+        transform: rotatex(30deg) rotatey(45deg);
+    }
+
+    100% {
+        transform: rotatex(30deg) rotatey(405deg);
+    }
+}
+
+@keyframes cube-explode {
+    0% {
+        transform: translatez(0.5em);
+    }
+
+    50% {
+        transform: translatez(0.75em);
+    }
+
+    100% {
+        transform: translatez(0.5em);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+@media screen and (max-width: 930px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        transition: all 1s;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 5%;
+        top: 37%;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .links {
+        position: absolute;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        padding: 150px 0;
+        background: black;
+        justify-content: space-around;
+        transition: all 1s ease-in-out;
+        clip-path: circle(100px at 95% -10%);
+        -webkit-clip-path: circle(100px at 95% -15%);
+        pointer-events: none;
+    }
+
+    .links.open {
+        clip-path: circle(2000px at 90% -10%);
+        -webkit-clip-path: circle(2000px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .links li {
+        opacity: 0;
+    }
+
+    .links li span {
+        font-size: 25px;
+    }
+
+    .nav-links:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .links li.fade {
+        opacity: 1;
+    }
+
+    .github-repo1::before,
+    .github-repo2::before {
+        left: 1px;
+        bottom: 4px;
+    }
+
+    header img {
+        height: 65px;
+        width: 65px;
+        margin: 18px -19px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    header.black img {
+        margin: 30px;
+        padding: 0;
+    }
+
+    .home p {
+        font-size: 10px;
+    }
+
+    .about p {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .icons {
+        margin: 20px 6px 20px;
+    }
+
+    .icons i {
+        font-size: 25px;
+    }
+
+    .footer-line {
+        width: 90%;
+        height: 3px;
+        margin: 0 0 10px;
+        background: #b9b9b9;
+        border: none;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 0;
+    }
+
+    .myimage {
+        padding: 20px;
+    }
+
+    .myimage img {
+        border-radius: 5px;
+    }
+
+    .pro-image img {
+        border-radius: 5px;
+    }
+
+    .scroll-top {
+        position: fixed;
+        right: 18px;
+        bottom: 15px;
+        outline: 0px;
+        background: #0a58ca;
+        border: none;
+        padding: 3px 12px 7px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        display: none;
+    }
+
+    .scroll-top:hover {
+        background: rgb(25, 52, 209);
+    }
+
+    .scroll-top i {
+        color: #ffffffcf;
+        font-size: 15px;
+    }
+
+    .hamburger div.show1 {
+        transform: rotate(45deg);
+        margin-top: 17px;
+    }
+
+    .hamburger div.show2 {
+        margin: -10px 0;
+        display: none;
+    }
+
+    .hamburger div.show3 {
+        transform: rotate(135deg);
+        margin: -8px 5px;
+    }
+
+    .video {
+        padding: 0 3.5%;
+    }
+
+    .cube{
+        font-size: 35px;
+    }
+}
